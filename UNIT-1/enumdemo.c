@@ -1,9 +1,13 @@
-#include <stdio.h>
-enum week {mon, tue, wed, thurs, fri, sat, sun};
+// Write a program to demonstrate Enumeration in C
 
-int main() {
-    enum week w;
-    w = sun;
-    printf("Constant value of tue is: %d", w);
+#include <stdio.h>
+// Enumeration declaration
+enum Week
+{ MON, TUE, WED, THU, FRI, SAT, SUN };
+int main()
+{
+    enum Week day;
+    day = WED;
+    printf("Value of WED = %d\n", WED);
     return 0;
 }
