@@ -71,6 +71,18 @@ void Display()
     }
 }
 
+void Insert_After();
+
+void Insert_Before();
+
+void Delete_First();
+
+void Delete_Last();
+
+void Delete_After();
+
+void Delete_Before();
+
 int main()
 {
     int choice;
@@ -79,8 +91,14 @@ int main()
         printf("\n1. Create Linked List");
         printf("\n2. Insert at Starting");
         printf("\n3. Insert at End");
-        printf("\n4. Display");
-        printf("\n5. Exit");
+        printf("\n4. Insert a node after the specific node");
+        printf("\n5. Dnsert a node before the specific node");
+        printf("\n6. Delete first node");
+        printf("\n7. Delete last node");
+        printf("\n8. Delete a node after the specific node");
+        printf("\n9. Delete a node before the specific node");
+        printf("\n10. Display");
+        printf("\n11. Exit");
 
         printf("\nEnter choice: ");
         scanf("%d", &choice);
@@ -100,10 +118,34 @@ int main()
                 break;
 
             case 4:
-                Display();
+                Insert_After();
                 break;
 
             case 5:
+                Insert_Before();
+                break;
+
+            case 6:
+                Delete_First();
+                break;
+            
+            case 7:
+                Delete_Last();
+                break;
+
+            case 8:
+                Delete_After();
+                break;
+
+            case 9:
+                Delete_Before();
+                break;
+
+            case 10:
+                Display();
+                break;
+
+            case 11:
                 printf("Exit");
                 break;
 
@@ -111,7 +153,7 @@ int main()
                 printf("Invalid choice");
         }
 
-    } while(choice != 5);
+    } while(choice != 11);
 
     return 0;
 }
