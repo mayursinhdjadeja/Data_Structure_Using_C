@@ -5,8 +5,9 @@
 int SmallestDivisor(int n, int i)
 {
     if (n % i == 0)
+    {
         return i;
-
+    }
     return SmallestDivisor(n, i + 1);
 }
 
