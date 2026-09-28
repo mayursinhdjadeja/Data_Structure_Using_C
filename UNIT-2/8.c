@@ -5,23 +5,38 @@
 int FindMin(int arr[], int n)
 {
     if (n == 1)
+    {
         return arr[0];
+    }
     int min = FindMin(arr, n - 1);
+    
     if (arr[n - 1] < min)
+    {
         return arr[n - 1];
+    }
     else
+    {
         return min;
+    }
 }
 
 int FindMax(int arr[], int n)
 {
     if (n == 1)
+    {
         return arr[0];
+    }
+    
     int max = FindMax(arr, n - 1);
+    
     if (arr[n - 1] > max)
+    {
         return arr[n - 1];
+    }
     else
+    {
         return max;
+    }
 }
 
 int main()
