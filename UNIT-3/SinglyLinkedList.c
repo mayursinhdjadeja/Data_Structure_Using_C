@@ -1,6 +1,5 @@
 /*
-Write a program to perform following operation on singly linked list:
-
+    Write a program to perform following operation on singly linked list:
     a. Create a linked list
     b. Display it
     c. Insert a node at the starting of the list
